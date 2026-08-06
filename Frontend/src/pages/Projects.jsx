@@ -13,14 +13,14 @@ export default function ProjectsPage() {
       liveDemoUrl: ""
     },
     {
-      title: "REST API & User Auth Service",
-      status: "PLANNED BUILD",
-      statusColor: "text-cyan-400 border-cyan-500/30 bg-cyan-500/10",
-      desc: "A lightweight backend service providing endpoints for user registration, login, and simple CRUD database actions.",
-      tech: ["Node.js", "Express", "MongoDB / SQL"],
-      concept: "Backend Routing, Middleware & Database Operations",
-      githubUrl: "",
-      liveDemoUrl: ""
+      title: "LootBaazar Admin Dashboard",
+      status: "LIVE / ACTIVE",
+      statusColor: "text-emerald-400 border-emerald-500/30 bg-emerald-500/10",
+      desc: "A fully responsive e-commerce administrative control panel built for managing platform users, product inventory, adding new items, and overseeing core operational details.",
+      tech: ["React", "Vite", "Tailwind CSS"],
+      concept: "E-Commerce Management, Inventory Control & Dashboard UI",
+      githubUrl: "https://github.com/Mohd-Faizan-Panwala/lootbaazar_frontend",
+      liveDemoUrl: "https://lootbaazar-frontend.vercel.app/"
     },
     {
       title: "Developer Portfolio Website",
@@ -95,7 +95,7 @@ export default function ProjectsPage() {
                   href={project.githubUrl || "#"} 
                   target="_blank" 
                   rel="noopener noreferrer" 
-                  className="text-[11px] font-mono text-slate-400 hover:text-cyan-400 transition flex items-center gap-1"
+                  className={`text-[11px] font-mono transition flex items-center gap-1 ${project.githubUrl ? 'text-slate-400 hover:text-cyan-400' : 'text-slate-600 pointer-events-none'}`}
                 >
                   GitHub →
                 </a>
@@ -103,7 +103,7 @@ export default function ProjectsPage() {
                   href={project.liveDemoUrl || "#"} 
                   target="_blank" 
                   rel="noopener noreferrer" 
-                  className="text-[11px] font-mono text-slate-400 hover:text-cyan-400 transition flex items-center gap-1"
+                  className={`text-[11px] font-mono transition flex items-center gap-1 ${project.liveDemoUrl ? 'text-slate-400 hover:text-cyan-400' : 'text-slate-600 pointer-events-none'}`}
                 >
                   Live Demo →
                 </a>
