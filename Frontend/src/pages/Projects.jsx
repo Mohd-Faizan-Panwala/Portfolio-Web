@@ -29,8 +29,8 @@ export default function ProjectsPage() {
       desc: "A modern responsive portfolio site built to showcase coding journey, core skills, and upcoming project builds.",
       tech: ["React", "Vite", "Tailwind CSS"],
       concept: "Component Architecture & Responsive Design",
-      githubUrl: "",
-      liveDemoUrl: ""
+      githubUrl: "https://github.com/Mohd-Faizan-Panwala/Portfolio-Web",
+      liveDemoUrl: "https://portfolio-web-roan-eight.vercel.app/"
     }
   ];
 
